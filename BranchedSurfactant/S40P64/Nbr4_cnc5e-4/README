@@ -1,0 +1,40 @@
+1.This code handles CO_2+Polyol+Surfactant(PDMS-PEO) ternary mixture.
+
+2a. Here surfactants are modeled as branched polymers: PDMS backbone and PEO branches
+2b. This specific code models PDMS_40-PEO_64 surfactant with 4 PEO branches
+2c. Each PEO branch has 64/4 = 16 segments 
+2d. NPEOBranches in the dft.input, takes number of PEO branches/chain as the input
+
+3.I define total number of bead types as 4 (1 for the polyol, 1for the CO2  and 2 for the surfactant)
+
+4.Code builds on the framework laid out by H.Chao. 
+
+5. I employed the Tree-branch formalism to model the branch polymer.
+Refer to the following for relevant nomenclature
+X.Xu, D.Cao, X.Zhang, and W. Wang, Phys.Rev.E, 79, 021805 (2009)
+5a. **qp_bb_pgt,**qc_bb_pgt,**qc_bbr_pgt,***qp_br_pgt,***qc_br_pgt are the arrays defined to handle surfactant propagators
+5b. **qp_bb_pgt : Parent propagators for the backbone segments
+5c. **qc_bb_pgt : Child propagators for the backbone segments
+5d: **qc_bbr_pgt : Child propagators for the backbone-branch connecting segments
+5e: ***qp_br_pgt : Parent propagators for the branch segments.
+5f. ***qc_br_pgt : Child propagators for the branch segments.
+
+Note: 5e and 5f are three dimensional arrays. One of the dimensions accounts for the branch number.  
+
+
+6. *Xar represents fraction of A type(here PDMS) surfactant segments at any spatial position j
+
+7. Main changes (when compared to H.Chao's ) to the code are in the files find_blkmu.cpp,dfree.cpp, 'poly_density.cpp'
+
+8. Only minor changes are addressed in the calc_press.cpp, calc_diff.cpp 
+
+9. find_blkmu.cpp and dfree.cpp follow very similar format. Mainly the section/function in these codes, which handle 
+chain formation energy and releveant derivatives,is restructured significantly. Other sections/functions should be
+very similar to original H.Chao's code.
+
+10. In the poly_density.cpp, Polyol+CO2 segments are handled separately from the surfactant density propagators.
+10a. Even the corresponding density accumulations are handled separately. 
+
+11. Initialize.cpp has a random number generator function to decide on the position of the branches. 
+11a. The main block of this gen_rnnum is designed to model only the branched molecules. 
+11b. Uncomment the section on 'For block copolymer' to model surfactant with block copolymer architecture.
