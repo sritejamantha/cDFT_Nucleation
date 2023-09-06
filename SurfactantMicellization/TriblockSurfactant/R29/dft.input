@@ -1,0 +1,21 @@
+303.8    Temperature
+120 40 10 70  N1 N2a N2b
+1 NPEOBranches
+2.99  3.46 2.88  2.99 sig1 sig2a sig2b
+226.5 204.58 257.73 226.5 epsln1 epsln2
+0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0	0.0 0.0 0.0 0.0 k12a k12b
+4.953893279089603e-111         0.8197971439407431 blkrho1 blkrho1
+1.0e-67   8.666667e-3 blkrho2a blkrho2a
+3.238555868472333e-67   2.1666667e-3 blkrho2b blkrho2b
+1.0e-67   1.5166667e-2
+0.532879   0.848929   PurLqPDMS  PurLqPPO
+###box info###
+150     L(A)
+0.2   dx(A)
+##sim para###
+100000 8e-4  ttstep lamb
+50 2500  otp_freq
+##bulk mu##
+-2.1 -2.160413962815854  -1.955	-2.1
+##Wall para##
+0
