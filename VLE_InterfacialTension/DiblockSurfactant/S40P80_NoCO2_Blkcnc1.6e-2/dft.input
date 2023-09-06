@@ -1,0 +1,21 @@
+303.8  Temperature
+120 40 80   N1 N2 N3a N3b
+1  NPEOBranches
+2.99 3.46 2.99 sig1 sig2  sig3a Sig3b
+226.5 204.58  226.5 epsln1 epsln2 epsln3a epsln3b
+0.0  0.0 k12a k12b
+0.0  0.0 k13aa k13ab
+0.0  0.0 k13ba k13bb
+1.0e-110	0.8504010466044508	blkrho1 blkrho1
+1.0e-48		3.333333e-7		blkrho1 blkrho1
+5.0e-49		6.666667e-7		blkrho1 blkrho1
+###box info###
+200     L(A)
+0.25   dx(A)
+##sim para###
+200000 1e-4  ttstep lamb
+100 10000  otp_freq
+##bulk mu##
+-2.6609849233 -2.044649662286	-3.1  -3.1
+##Wall para##
+0

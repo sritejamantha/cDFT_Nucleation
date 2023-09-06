@@ -1,0 +1,269 @@
+
+Number of threads set to 1!
+current simulation temprt 303.800000
+with N string points: 60
+with cut r at: 110.000000
+type 0 mol length 120
+type 1 mol length 2
+type 2 mol length 40
+type 3 mol length 80
+Fraction of Backbone beads per chain=0.333333
+Number of PEO Branches per chain=1
+type 0 sigma  2.990000
+type 1 sigma  2.790000
+type 2 sigma  3.460000
+type 3 sigma  2.990000
+type 0 epsln  226.500000
+type 1 epsln  170.500000
+type 2 epsln  204.580000
+type 3 epsln  226.500000
+crskij  0.000000 0.000000
+crskij  0.000000 0.000000
+crskij  0.000000 0.000000
+crskij  0.000000 0.000000
+crskij  0.000000 0.000000
+crskij  0.000000 0.000000
+bulk density read in 0.000000 0.611061
+bulk density read in 0.111497 0.219610
+bulk density read in 0.000000 0.000199
+bulk density read in 0.000000 0.000398
+dim 0 w length 150.000000
+dim 0 w dx 0.200000
+The ttstep  = 100000 and otp freq = 500, otp freq2 = 500, strg_init = -1
+type 0 w amu: -2.160000
+type 1 w amu: -3.680000
+type 2 w amu: -0.536000
+type 3 w amu: -1.485000
+wall para 0
+restart ind 0
+dft_mat.dat loaded!
+strg cut ind at 550
+type i: sigma 0.987182 Nsig 0.936455 N2sig 2.00669 sigNhf 7 sigN 15
+type i: sigma 0.912318 Nsig 0.936455 N2sig 1.87291 sigNhf 7 sigN 14
+type i: sigma 1.13877 Nsig 1.20401 N2sig 2.27425 sigNhf 9 sigN 17
+type i: sigma 0.987182 Nsig 0.936455 N2sig 2.00669 sigNhf 7 sigN 15
+padN 17; padN2 85
+M 750 extM 784 extM2 920
+crsepsln type 0: 196.515
+crsepsln type 1: 215.261
+crsepsln type 2: 226.5
+crsepsln type 3: 186.764
+crsepsln type 4: 196.515
+crsepsln type 5: 215.261
+Read ter_rho0.dat!
+Read ter_rho1.dat!
+Read ter_rho2.dat!
+Read ter_rho3.dat!
+0 	 0.611061134915746
+1 	 0.219609510993254
+2 	 0.000198876661157
+3 	 0.000397753322313
+sigvs 0.966555
+sigvs 1.0786
+sigvs 1
+sigvs 1.04515
+sigvs 0.966555
+sigvs 1.0786
+1.072868217054264e+00 	 1.000000000000000e+00 	 1.157190635451505e+00 
+1.057502466050538e+00 	 9.871823531488881e-01 	 1.138773596252269e+00 
+99996.773282
+step 0 delt f 1.8109
+step 500 delt f 0.420036
+step 1000 delt f 1.3419
+step 1500 delt f 0.815868
+step 2000 delt f 0.466497
+step 2500 delt f 0.249949
+step 3000 delt f 0.120673
+step 3500 delt f 0.0465012
+step 4000 delt f 0.00460898
+step 4500 delt f -0.0188185
+step 5000 delt f -0.0309806
+step 5500 delt f -0.0359023
+step 6000 delt f -0.0366976
+step 6500 delt f -0.0355782
+step 7000 delt f -0.0336897
+step 7500 delt f -0.0315311
+step 8000 delt f -0.0293005
+step 8500 delt f -0.0270696
+step 9000 delt f -0.0248746
+step 9500 delt f -0.0227543
+step 10000 delt f -0.0207504
+step 10500 delt f -0.0188942
+step 11000 delt f -0.0172
+step 11500 delt f -0.0156671
+step 12000 delt f -0.0142852
+step 12500 delt f -0.0130396
+step 13000 delt f -0.0119148
+step 13500 delt f -0.0108956
+step 14000 delt f -0.00996853
+step 14500 delt f -0.00912197
+step 15000 delt f -0.00834582
+step 15500 delt f -0.00763162
+step 16000 delt f -0.00697227
+step 16500 delt f -0.00636187
+step 17000 delt f -0.00579552
+step 17500 delt f -0.00526919
+step 18000 delt f -0.00477957
+step 18500 delt f -0.00432392
+step 19000 delt f -0.00389998
+step 19500 delt f -0.00350584
+step 20000 delt f -0.00313988
+step 20500 delt f -0.00280067
+step 21000 delt f -0.00248692
+step 21500 delt f -0.00219744
+step 22000 delt f -0.00193107
+step 22500 delt f -0.00168671
+step 23000 delt f -0.00146325
+step 23500 delt f -0.00125959
+step 24000 delt f -0.00107464
+step 24500 delt f -0.000907286
+step 25000 delt f -0.000756441
+step 25500 delt f -0.000621017
+step 26000 delt f -0.000499945
+step 26500 delt f -0.000392177
+step 27000 delt f -0.000296694
+step 27500 delt f -0.00021251
+step 28000 delt f -0.00013868
+step 28500 delt f -7.43025e-05
+step 29000 delt f -1.85204e-05
+step 29500 delt f 2.94734e-05
+step 30000 delt f 7.04366e-05
+step 30500 delt f 0.000105077
+step 31000 delt f 0.000134053
+step 31500 delt f 0.000157972
+step 32000 delt f 0.000177395
+step 32500 delt f 0.000192838
+step 33000 delt f 0.000204772
+step 33500 delt f 0.000213624
+step 34000 delt f 0.000219786
+step 34500 delt f 0.000223609
+step 35000 delt f 0.000225411
+step 35500 delt f 0.000225479
+step 36000 delt f 0.000224068
+step 36500 delt f 0.000221407
+step 37000 delt f 0.0002177
+step 37500 delt f 0.000213129
+step 38000 delt f 0.000207852
+step 38500 delt f 0.00020201
+step 39000 delt f 0.000195729
+step 39500 delt f 0.000189115
+step 40000 delt f 0.000182263
+step 40500 delt f 0.000175254
+step 41000 delt f 0.000168159
+step 41500 delt f 0.000161039
+step 42000 delt f 0.000153944
+step 42500 delt f 0.000146918
+step 43000 delt f 0.000139997
+step 43500 delt f 0.000133211
+step 44000 delt f 0.000126585
+step 44500 delt f 0.000120139
+step 45000 delt f 0.000113887
+step 45500 delt f 0.000107843
+step 46000 delt f 0.000102013
+step 46500 delt f 9.64046e-05
+step 47000 delt f 9.10208e-05
+step 47500 delt f 8.58629e-05
+step 48000 delt f 8.09305e-05
+step 48500 delt f 7.62218e-05
+step 49000 delt f 7.17337e-05
+step 49500 delt f 6.74623e-05
+step 50000 delt f 6.34026e-05
+step 50500 delt f 5.95489e-05
+step 51000 delt f 5.58953e-05
+step 51500 delt f 5.24351e-05
+step 52000 delt f 4.91617e-05
+step 52500 delt f 4.60679e-05
+step 53000 delt f 4.31467e-05
+step 53500 delt f 4.03908e-05
+step 54000 delt f 3.77931e-05
+step 54500 delt f 3.53465e-05
+step 55000 delt f 3.30438e-05
+step 55500 delt f 3.08781e-05
+step 56000 delt f 2.88428e-05
+step 56500 delt f 2.69311e-05
+step 57000 delt f 2.51367e-05
+step 57500 delt f 2.34534e-05
+step 58000 delt f 2.18751e-05
+step 58500 delt f 2.03962e-05
+step 59000 delt f 1.9011e-05
+step 59500 delt f 1.77144e-05
+step 60000 delt f 1.65011e-05
+step 60500 delt f 1.53664e-05
+step 61000 delt f 1.43057e-05
+step 61500 delt f 1.33145e-05
+step 62000 delt f 1.23886e-05
+step 62500 delt f 1.15241e-05
+step 63000 delt f 1.07173e-05
+step 63500 delt f 9.96451e-06
+step 64000 delt f 9.2624e-06
+step 64500 delt f 8.60777e-06
+step 65000 delt f 7.99764e-06
+step 65500 delt f 7.42912e-06
+step 66000 delt f 6.89956e-06
+step 66500 delt f 6.40644e-06
+step 67000 delt f 5.94738e-06
+step 67500 delt f 5.52014e-06
+step 68000 delt f 5.12263e-06
+step 68500 delt f 4.75287e-06
+step 69000 delt f 4.40903e-06
+step 69500 delt f 4.08933e-06
+step 70000 delt f 3.79218e-06
+step 70500 delt f 3.51605e-06
+step 71000 delt f 3.25951e-06
+step 71500 delt f 3.0212e-06
+step 72000 delt f 2.7999e-06
+step 72500 delt f 2.59442e-06
+step 73000 delt f 2.40369e-06
+step 73500 delt f 2.22664e-06
+step 74000 delt f 2.06238e-06
+step 74500 delt f 1.90996e-06
+step 75000 delt f 1.76859e-06
+step 75500 delt f 1.63747e-06
+step 76000 delt f 1.51589e-06
+step 76500 delt f 1.40317e-06
+step 77000 delt f 1.29868e-06
+step 77500 delt f 1.20182e-06
+step 78000 delt f 1.11208e-06
+step 78500 delt f 1.02891e-06
+step 79000 delt f 9.51889e-07
+step 79500 delt f 8.80522e-07
+step 80000 delt f 8.14433e-07
+step 80500 delt f 7.5322e-07
+step 81000 delt f 6.96561e-07
+step 81500 delt f 6.44086e-07
+step 82000 delt f 5.95521e-07
+step 82500 delt f 5.50565e-07
+step 83000 delt f 5.08965e-07
+step 83500 delt f 4.70473e-07
+step 84000 delt f 4.3485e-07
+step 84500 delt f 4.01884e-07
+step 85000 delt f 3.71407e-07
+step 85500 delt f 3.43201e-07
+step 86000 delt f 3.17134e-07
+step 86500 delt f 2.92999e-07
+step 87000 delt f 2.7071e-07
+step 87500 delt f 2.50086e-07
+step 88000 delt f 2.31022e-07
+step 88500 delt f 2.13391e-07
+step 89000 delt f 1.97097e-07
+step 89500 delt f 1.82038e-07
+step 90000 delt f 1.68127e-07
+step 90500 delt f 1.55261e-07
+step 91000 delt f 1.43381e-07
+step 91500 delt f 1.32395e-07
+step 92000 delt f 1.22236e-07
+step 92500 delt f 1.12879e-07
+step 93000 delt f 1.04202e-07
+step 93500 delt f 9.62222e-08
+step 94000 delt f 8.88128e-08
+step 94500 delt f 8.19909e-08
+step 95000 delt f 7.56838e-08
+step 95500 delt f 6.98647e-08
+step 96000 delt f 6.4477e-08
+step 96500 delt f 5.95217e-08
+step 97000 delt f 5.49383e-08
+step 97500 delt f 5.07075e-08
+step 98000 delt f 4.67929e-08
+step 98500 delt f 4.31873e-08
+step 99000 delt f 3.98634e-08
+step 99500 delt f 3.67752e-08

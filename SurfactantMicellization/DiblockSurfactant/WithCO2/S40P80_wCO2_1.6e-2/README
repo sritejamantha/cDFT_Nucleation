@@ -1,0 +1,34 @@
+1.This code handles Polyol(PPO)+CO2+Surfactant(PDMS-PPO) binary mixture.
+1a. cDFT equations are solved in spherical coordinates
+1b. Purpose of this code is to compute formation free energy of a micelle of particular size.
+1c. For demonstration, I included codes for micelles of size 2.7nm, 2.9nm and 3.1nm
+2.Surfactant is modeled as a diblock-copolymer. 
+3.I define total number of bead types as 4 (1 for the polyol, 1 for CO2 and 2 for the surfactant)
+3a. The initialize.cpp reads rhoP_Inp.dat, rhoS_Inp.dat, and rhoPl_Inp.dat files as inputs.
+These are the initital segment density profiles of Polyol, PDMS and PPO segments.
+Initial density of CO2 is set to be same as that of PPO \times some scaling factor)
+3b. I generated them from earlier test calculations. If we generate equilibirum density profiles representing  micelle of a particular size(R), 
+we can use that as an input to generate equilibrium density profiles of micelles with size R+r0 and R-r0.
+Following this protocil we can generate equilibrium densities of micelles of any accessible size.
+Note: Micelles of too small or too big a size may not be stable and are not accessible afterall.
+3c. rho0.dat,rho1.dat,rho2.dat are final equilibirum densities representing micelle of a particular size.
+4.Code builds on the framework laid out by H.Chao. 
+5. **qs_fwd_pgt, **gs_bkd_pgt are the new arrays defined handle forward and backward surfactant propagators.
+6. *Xar represents fraction of A type(here PDMS) surfactant segments at any spatial position j
+7. Main changes (wrt to H.Chao's original) to the code are in the files find_blkmu.cpp,dfree.cpp, poly_density.cpp
+8. Only minor changes are addressed in the calc_press.cpp, calc_diff.cpp 
+9. find_blkmu.cpp and dfree.cpp follow very similar format. Mainly the section/function in these codes, which handle 
+chain formation energy and releveant derivatives,is restructured significantly. Other sections/functions should be
+very similar to original H.Chao's code.
+10. In the poly_density.cpp, Polyol and surfactant desnity propagator are handled separately.
+Even the corresponding density accumulations are handled separately. 
+However that function is not used here. 
+11. NPEOBranches in the dft.input is not used at all in this code. There are no PEO branches in this surfactant.
+However, read_input.cpp still reads it, but we don't use it anywhere else.  
+
+Post Processing: 
+12. After running the DFT code for certain number of steps, I noticed maximum error oscillates around a certain values.
+Though the density profiles didn't change significantly beyond that, I noticed some changes in the micelle formation energy. 
+Hence,to compute the micelle formation energy I extended the cDFT calculation to more steps and averaged the micelle formation energy over the 
+last 30000/50000 steps 
+13. All the post-processing data files and .c files are located in the OutFiles folder

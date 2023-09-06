@@ -1,0 +1,17 @@
+1.This code handles Polyol(PPO)+Surfactant(PDMS-PPO) binary mixture.
+2.Surfactant is modeled as a diblock-copolymer. 
+3.I define total number of bead types as 3 (1 for the polyol and 2 for the surfactant)
+4.Code builds on the framework laid out by H.Chao. 
+5. **qs_fwd_pgt, **gs_bkd_pgt are the new arrays defined handle forward and backward surfactant propagators.
+6. *Xar represents fraction of A type(here PDMS) surfactant segments at any spatial position j
+7. Main changes (wrt to H.Chao's original) to the code are in the files find_blkmu.cpp,dfree.cpp, poly_density.cpp
+8. Only minor changes are addressed in the calc_press.cpp, calc_diff.cpp 
+9. find_blkmu.cpp and dfree.cpp follow very similar format. Mainly the section/function in these codes, which handle 
+chain formation energy and releveant derivatives,is restructured significantly. Other sections/functions should be
+very similar to original H.Chao's code.
+10. In the poly_density.cpp, Polyol and surfactant desnity propagator are handled separately.
+Even the corresponding density accumulations are handled separately. 
+11. Initialize.cpp has a random number generator module to decide on the position of the branches. 
+However that function is not used here. 
+12. NPEOBranches in the dft.input is not used at all in this code. There are no PEO branches in this surfactant.
+However, read_input.cpp still reads it, but we don't use it anywhere else.  
